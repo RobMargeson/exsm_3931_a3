@@ -1,0 +1,34 @@
+Hungry Customer Pseudo code
+Money  = X {
+    X must be greater than 0
+}
+vending_inventory = {chips: 8, skittles: 5, starbust: 3}
+vending_code = {chips: 001, skittles: 002, starbust: 003}
+Vending_prices = {chips: 2.00, skittles: 1.50, starbust: 1.75}
+Change = X - (vending_inventory*Vending_prices)
+Choice = vending_code
+
+Look at vending_inventory and Vending_prices
+select Choice
+if choice is not available, or vending_inventory is 0 {
+    error message asking customer to picka  new option
+}
+insert Money
+while money is less than cost {
+    insert more money
+}
+gears turn to dispense item associated to vending_code
+return change 
+
+
+Investor Pseudo code
+check vending_inventory{
+    if vending_inventory has decreased by 1 or more proceed to unlock machine, if vending_inventory has not decreased do not unlock machine, 
+    if check has not been completed in past 10 calendar days proceed to unlock machine regardless of changes in vending_inventory
+}
+unlock machine with key
+check vending_inventory{
+    if vending_inventory is <1 for any vending_inventory add more vending_inventory
+}
+empty coin storage and return coin starage container back to machine
+relock machine
